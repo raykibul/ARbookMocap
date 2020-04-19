@@ -45,7 +45,7 @@ public class SceneController : MonoBehaviour
         obj = Instantiate(myModels[index].objectAsset, objectPosition, Quaternion.identity);
         float scale = myModels[index].objectSize;
         obj.transform.localScale = new Vector3(scale,scale,scale);
-        latter.transform.localScale = new Vector3(2f,2f,2f);
+        latter.transform.localScale = new Vector3(4f,4f,4f);
         //rotating those models and latter and teacher;
         latter.transform.Rotate(new Vector3(0f,-180f,0f));
         obj.transform.Rotate(new Vector3(0f, -180f, 0f));
@@ -64,6 +64,17 @@ public class SceneController : MonoBehaviour
         }
 
         index++;
+
+
+    }
+
+    private void Update()
+    {
+        if (obj != null)
+        {
+            obj.transform.Rotate(new Vector3 (0f, Time.deltaTime * 50, 0f));
+        }
+
 
 
     }
