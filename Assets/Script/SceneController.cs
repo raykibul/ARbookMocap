@@ -16,6 +16,7 @@ public class SceneController : MonoBehaviour
     public   GameObject backgroundCube;
     public   AudioSource audioSource;
     private  GameObject latter, obj, teacher;
+    private Animator teacherAnimator=null, objectAnimator=null;
 
     void Start()
     {
@@ -43,7 +44,25 @@ public class SceneController : MonoBehaviour
         teacher = Instantiate(myModels[index].teacherAsset,teacherPosition,Quaternion.identity);
         latter = Instantiate(myModels[index].latterAsset, latterPosition, Quaternion.identity);
         obj = Instantiate(myModels[index].objectAsset,objectPosition, Quaternion.identity);
-         
+
+        //animation;
+        teacherAnimator = teacher.GetComponent<Animator>();
+        if (teacherAnimator == null)
+        {
+            teacher.AddComponent<Animator>();
+            teacherAnimator = teacher.GetComponent<Animator>();
+        }
+        teacherAnimator.runtimeAnimatorController = Resources.Load("girl") as RuntimeAnimatorController;
+        if (index == 0)
+        {
+            objectAnimator = obj.GetComponent<Animator>();
+            if (objectAnimator == null)
+            {
+                obj.AddComponent<Animator>();
+                objectAnimator = obj.GetComponent<Animator>();
+            }
+            objectAnimator.runtimeAnimatorController = Resources.Load("Ojogor") as RuntimeAnimatorController;
+        }
         //check if any desired location provided if yes , then change location
         if (myModels[index].latterPostion!= Vector3.zero)
           latter.transform.localPosition = myModels[index].latterPostion;
@@ -83,11 +102,7 @@ public class SceneController : MonoBehaviour
     }
     private void Update()
     {
-        /*if (obj != null)
-        {
-            obj.transform.Rotate(new Vector3 (0f, Time.deltaTime * 50, 0f));
-        }
-*/
+ 
 
 
     }

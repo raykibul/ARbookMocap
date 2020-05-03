@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -790,7 +790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   latterPosition: {x: 0.914, y: -0.8, z: 1.01247}
   objectPosition: {x: 2.21, y: -1.08, z: 0.84}
-  teacherPosition: {x: 0.1621515, y: -1.08, z: 0.8313}
+  teacherPosition: {x: 0.99, y: -1.07, z: 0.68}
   myModels:
   - backgroundCube: {fileID: 2800000, guid: 4d3b8fc6536a3b04db21537ea6e6ae99, type: 3}
     groundCube: {fileID: 2800000, guid: 4053fe133bcd3594c94d014a098a6060, type: 3}
@@ -799,7 +799,7 @@ MonoBehaviour:
     latterPostion: {x: 1.79, y: -0.86, z: 0.81}
     teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
       type: 3}
-    teacherPostion: {x: 0.897, y: -0.427, z: 0.8313}
+    teacherPostion: {x: 0.99, y: -1.07, z: 0.68}
     objectAsset: {fileID: -927199367670048503, guid: 1bcd7126f6830fb42b0d093e278bcaf8,
       type: 3}
     objectPostion: {x: 2.5, y: -0.94, z: 0.84}
@@ -812,7 +812,7 @@ MonoBehaviour:
     latterPostion: {x: 1.18, y: -0.813, z: 0.81}
     teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
       type: 3}
-    teacherPostion: {x: 0.34, y: -0.427, z: 0.83}
+    teacherPostion: {x: 0.34, y: -1.07, z: 0.83}
     objectAsset: {fileID: -927199367670048503, guid: d2c50cae24fe13f448937e89b92493df,
       type: 3}
     objectPostion: {x: 1.83, y: 0.32, z: 0.84}
@@ -825,7 +825,7 @@ MonoBehaviour:
     latterPostion: {x: 1.45, y: -0.8, z: 1.01247}
     teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
       type: 3}
-    teacherPostion: {x: 0.48, y: -0.42, z: 0.8313}
+    teacherPostion: {x: 0.99, y: -1.07, z: 0.68}
     objectAsset: {fileID: -927199367670048503, guid: 9e0b46b1ef1e50f4394324ae75f8b500,
       type: 3}
     objectPostion: {x: 3.18, y: -0.92, z: 1.44}
@@ -838,7 +838,7 @@ MonoBehaviour:
     latterPostion: {x: 1.45, y: -0.8, z: 1.01247}
     teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
       type: 3}
-    teacherPostion: {x: 0.48, y: -0.42, z: 0.8313}
+    teacherPostion: {x: 0.48, y: -1.07, z: 0.8313}
     objectAsset: {fileID: -927199367670048503, guid: cc3022f7f48a6f247a7a1d442e1f1cda,
       type: 3}
     objectPostion: {x: 2.84, y: -0.38, z: 1.44}
@@ -851,7 +851,7 @@ MonoBehaviour:
     latterPostion: {x: 1.45, y: -0.8, z: 1.01247}
     teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
       type: 3}
-    teacherPostion: {x: 0.48, y: -0.42, z: 0.8313}
+    teacherPostion: {x: 0.48, y: -1.07, z: 0.8313}
     objectAsset: {fileID: -927199367670048503, guid: 219b45858a98ab94d905de235d8ebbe9,
       type: 3}
     objectPostion: {x: 2.414, y: -1.09, z: 1.07}
@@ -864,7 +864,7 @@ MonoBehaviour:
     latterPostion: {x: 1.249, y: -0.487, z: -0.574}
     teacherAsset: {fileID: -927199367670048503, guid: ca03ede617b26844d832e890ae45b823,
       type: 3}
-    teacherPostion: {x: 1.002, y: -0.42, z: -0.558}
+    teacherPostion: {x: 1.002, y: -0.63, z: -0.558}
     objectAsset: {fileID: -927199367670048503, guid: 3b581d0e6354e604fa04aa15fe80148e,
       type: 3}
     objectPostion: {x: 2.04, y: -0.92, z: 1.29}
@@ -877,7 +877,7 @@ MonoBehaviour:
     latterPostion: {x: 1.242, y: -0.525, z: -0.576}
     teacherAsset: {fileID: -927199367670048503, guid: ca03ede617b26844d832e890ae45b823,
       type: 3}
-    teacherPostion: {x: 1.055, y: -0.42, z: -0.606}
+    teacherPostion: {x: 1.055, y: -0.63, z: -0.46}
     objectAsset: {fileID: -927199367670048503, guid: 9986aef2a6010d045b1506bb2f7e1219,
       type: 3}
     objectPostion: {x: 1.31, y: -0.6, z: 0.01}
@@ -890,7 +890,7 @@ MonoBehaviour:
     latterPostion: {x: 1.45, y: -0.8, z: 1.01247}
     teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
       type: 3}
-    teacherPostion: {x: 0.48, y: -0.42, z: 0.8313}
+    teacherPostion: {x: 0.48, y: -1.07, z: 0.8313}
     objectAsset: {fileID: -927199367670048503, guid: 789c987bf1e1449498e3387abd8ae24e,
       type: 3}
     objectPostion: {x: 2.6, y: -0.61, z: 1.01}
@@ -903,7 +903,7 @@ MonoBehaviour:
     latterPostion: {x: 1.45, y: -0.8, z: 1.01247}
     teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
       type: 3}
-    teacherPostion: {x: 0.48, y: -0.42, z: 0.8313}
+    teacherPostion: {x: 0.48, y: -1.07, z: 0.8313}
     objectAsset: {fileID: 4298995881731601321, guid: c45e691f43f9ffb42b6cd1385e287f6e,
       type: 3}
     objectPostion: {x: 3.18, y: -0.92, z: 1.44}
