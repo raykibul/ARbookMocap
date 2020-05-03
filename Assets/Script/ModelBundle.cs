@@ -13,6 +13,7 @@ public class ModelBundle
     public GameObject teacherAsset;
     public Vector3 teacherPostion= Vector3.zero;
     public GameObject objectAsset;
+ 
     public Vector3 objectPostion= Vector3.zero;
     public float objectSize;
     public AudioClip audioClip;

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class SceneController : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class SceneController : MonoBehaviour
     public   GameObject backgroundCube;
     public   AudioSource audioSource;
     private  GameObject latter, obj, teacher;
+    Animator teacherAnimator, objAnimator, latterAnimator;
 
     void Start()
     {
@@ -43,7 +45,8 @@ public class SceneController : MonoBehaviour
         teacher = Instantiate(myModels[index].teacherAsset,teacherPosition,Quaternion.identity);
         latter = Instantiate(myModels[index].latterAsset, latterPosition, Quaternion.identity);
         obj = Instantiate(myModels[index].objectAsset,objectPosition, Quaternion.identity);
-         
+
+       
         //check if any desired location provided if yes , then change location
         if (myModels[index].latterPostion!= Vector3.zero)
           latter.transform.localPosition = myModels[index].latterPostion;
@@ -55,7 +58,12 @@ public class SceneController : MonoBehaviour
         float scale = myModels[index].objectSize;
         obj.transform.localScale = new Vector3(scale,scale,scale);
         latter.transform.localScale = new Vector3(4f,4f,4f);
+        teacherAnimator = teacher.GetComponent<Animator>();
+        teacherAnimator.runtimeAnimatorController= Resources.Load("girl2") as RuntimeAnimatorController;
+        objAnimator= obj.GetComponent<Animator>();
+        objAnimator.runtimeAnimatorController = Resources.Load("ojogor") as RuntimeAnimatorController;
         
+       
         //rotating those models and latter and teacher;
         latter.transform.Rotate(new Vector3(0f,-180f,0f));
         obj.transform.Rotate(new Vector3(0f, -180f, 0f));
@@ -77,19 +85,14 @@ public class SceneController : MonoBehaviour
 
 
     }
-    private void ChangePostion(Vector3 desiredPostion)
-    {
-
-    }
+    
     private void Update()
     {
-        /*if (obj != null)
+        if (!audioSource.isPlaying)
         {
-            obj.transform.Rotate(new Vector3 (0f, Time.deltaTime * 50, 0f));
+            teacherAnimator.Rebind();
+
         }
-*/
-
-
     }
 
 }
