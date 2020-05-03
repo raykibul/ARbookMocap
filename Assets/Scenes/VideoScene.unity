@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -541,6 +541,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -752,7 +753,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087535204}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.14, y: -1.1352198, z: 0.61}
+  m_LocalPosition: {x: 1.141, y: -1.1352198, z: 0.61}
   m_LocalScale: {x: 12, y: 0.1, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -791,36 +792,149 @@ MonoBehaviour:
   objectPosition: {x: 2.21, y: -1.08, z: 0.84}
   teacherPosition: {x: 0.1621515, y: -1.08, z: 0.8313}
   myModels:
-  - backgroundCube: {fileID: 2800000, guid: a30ed2283863cd44e9f87a575cd89a4c, type: 3}
-    groundCube: {fileID: 2800000, guid: b07cadfe14311184081fe855190ff7af, type: 3}
+  - backgroundCube: {fileID: 2800000, guid: 4d3b8fc6536a3b04db21537ea6e6ae99, type: 3}
+    groundCube: {fileID: 2800000, guid: 4053fe133bcd3594c94d014a098a6060, type: 3}
     latterAsset: {fileID: -927199367670048503, guid: 304d44193a80ab0408f34e53e71cb072,
       type: 3}
-    teacherAsset: {fileID: -927199367670048503, guid: fe001c3808a40e247bc446147589c66c,
+    latterPostion: {x: 1.79, y: -0.86, z: 0.81}
+    teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
       type: 3}
-    objectAsset: {fileID: -927199367670048503, guid: 59927389f0cb437459e7130baad2fd30,
+    teacherPostion: {x: 0.897, y: -0.427, z: 0.8313}
+    objectAsset: {fileID: -927199367670048503, guid: 1bcd7126f6830fb42b0d093e278bcaf8,
       type: 3}
+    objectPostion: {x: 2.5, y: -0.94, z: 0.84}
     objectSize: 4
-    audioClip: {fileID: 8300000, guid: b351ab793c7bfe74ea2e7eeee7f81aa1, type: 3}
-  - backgroundCube: {fileID: 2800000, guid: 2c48ebaa95e93b3468e276bd76f2ebb2, type: 3}
-    groundCube: {fileID: 2800000, guid: 7a07b7be72b05c84cbd3fdda647c37ae, type: 3}
+    audioClip: {fileID: 0}
+  - backgroundCube: {fileID: 2800000, guid: acf86df63af86d84e9d38a56e9b9fa08, type: 3}
+    groundCube: {fileID: 2800000, guid: d075d689851ab9a4083e6d10d5fc3bd5, type: 3}
+    latterAsset: {fileID: -927199367670048503, guid: d204bfd24ac44f344b3e4988a4326116,
+      type: 3}
+    latterPostion: {x: 1.18, y: -0.813, z: 0.81}
+    teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
+      type: 3}
+    teacherPostion: {x: 0.34, y: -0.427, z: 0.83}
+    objectAsset: {fileID: -927199367670048503, guid: d2c50cae24fe13f448937e89b92493df,
+      type: 3}
+    objectPostion: {x: 1.83, y: 0.32, z: 0.84}
+    objectSize: 3
+    audioClip: {fileID: 0}
+  - backgroundCube: {fileID: 2800000, guid: 6c51c2f1665df0448b9d8738aeb66c14, type: 3}
+    groundCube: {fileID: 2800000, guid: 724c2b8071d74cb46b64a36e469c8724, type: 3}
+    latterAsset: {fileID: -927199367670048503, guid: 45ce083b442911343ae455665cf87260,
+      type: 3}
+    latterPostion: {x: 1.45, y: -0.8, z: 1.01247}
+    teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
+      type: 3}
+    teacherPostion: {x: 0.48, y: -0.42, z: 0.8313}
+    objectAsset: {fileID: -927199367670048503, guid: 9e0b46b1ef1e50f4394324ae75f8b500,
+      type: 3}
+    objectPostion: {x: 3.18, y: -0.92, z: 1.44}
+    objectSize: 4
+    audioClip: {fileID: 0}
+  - backgroundCube: {fileID: 2800000, guid: db9ac4fd944232e408780b03be36863f, type: 3}
+    groundCube: {fileID: 2800000, guid: 8a8bc1823b1094249b2dc97f4417add1, type: 3}
+    latterAsset: {fileID: -927199367670048503, guid: e455538d7ec8a1f4c949774fc75b7a17,
+      type: 3}
+    latterPostion: {x: 1.45, y: -0.8, z: 1.01247}
+    teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
+      type: 3}
+    teacherPostion: {x: 0.48, y: -0.42, z: 0.8313}
+    objectAsset: {fileID: -927199367670048503, guid: cc3022f7f48a6f247a7a1d442e1f1cda,
+      type: 3}
+    objectPostion: {x: 2.84, y: -0.38, z: 1.44}
+    objectSize: 150
+    audioClip: {fileID: 0}
+  - backgroundCube: {fileID: 2800000, guid: d07c2c3fd5f58af408036a66a0191f95, type: 3}
+    groundCube: {fileID: 2800000, guid: fc3bfc952e20a3240947d1284f44b0ec, type: 3}
     latterAsset: {fileID: -927199367670048503, guid: b1d355fdd0a96fa499b216698643868d,
       type: 3}
-    teacherAsset: {fileID: -927199367670048503, guid: fe001c3808a40e247bc446147589c66c,
+    latterPostion: {x: 1.45, y: -0.8, z: 1.01247}
+    teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
       type: 3}
+    teacherPostion: {x: 0.48, y: -0.42, z: 0.8313}
     objectAsset: {fileID: -927199367670048503, guid: 219b45858a98ab94d905de235d8ebbe9,
       type: 3}
+    objectPostion: {x: 2.414, y: -1.09, z: 1.07}
+    objectSize: 1.25
+    audioClip: {fileID: 0}
+  - backgroundCube: {fileID: 2800000, guid: ca0cf62afbf4779409c5799a9673a5d1, type: 3}
+    groundCube: {fileID: 2800000, guid: e84630effc48069489006ac40bfcd06b, type: 3}
+    latterAsset: {fileID: -927199367670048503, guid: 28ffa0f57cf2be64394c216955905ceb,
+      type: 3}
+    latterPostion: {x: 1.249, y: -0.487, z: -0.574}
+    teacherAsset: {fileID: -927199367670048503, guid: ca03ede617b26844d832e890ae45b823,
+      type: 3}
+    teacherPostion: {x: 1.002, y: -0.42, z: -0.558}
+    objectAsset: {fileID: -927199367670048503, guid: 3b581d0e6354e604fa04aa15fe80148e,
+      type: 3}
+    objectPostion: {x: 2.04, y: -0.92, z: 1.29}
+    objectSize: 12
+    audioClip: {fileID: 0}
+  - backgroundCube: {fileID: 2800000, guid: 79bb2e52e3a826945a06bc4e80a24cd6, type: 3}
+    groundCube: {fileID: 0}
+    latterAsset: {fileID: -927199367670048503, guid: 45754a9c676db9a41918f0ed034c14fd,
+      type: 3}
+    latterPostion: {x: 1.242, y: -0.525, z: -0.576}
+    teacherAsset: {fileID: -927199367670048503, guid: ca03ede617b26844d832e890ae45b823,
+      type: 3}
+    teacherPostion: {x: 1.055, y: -0.42, z: -0.606}
+    objectAsset: {fileID: -927199367670048503, guid: 9986aef2a6010d045b1506bb2f7e1219,
+      type: 3}
+    objectPostion: {x: 1.31, y: -0.6, z: 0.01}
     objectSize: 1
-    audioClip: {fileID: 8300000, guid: aba569a679c251a4c96f2ea93fdc176d, type: 3}
-  - backgroundCube: {fileID: 2800000, guid: d0ef4402c67bdd64995b80347901b0eb, type: 3}
-    groundCube: {fileID: 2800000, guid: 3dcbb3de1a7a7f84e822735757242ec4, type: 3}
-    latterAsset: {fileID: -927199367670048503, guid: bcdc09b5027179d49a1014dab4a81888,
+    audioClip: {fileID: 0}
+  - backgroundCube: {fileID: 2800000, guid: 3fc0b1b2871e98e498409ebfa7eecf2e, type: 3}
+    groundCube: {fileID: 2800000, guid: ff982b74fafa0a742a7d853aeebbe037, type: 3}
+    latterAsset: {fileID: -927199367670048503, guid: dee870884b9194644bc66c8f29e77e21,
       type: 3}
-    teacherAsset: {fileID: -927199367670048503, guid: fe001c3808a40e247bc446147589c66c,
+    latterPostion: {x: 1.45, y: -0.8, z: 1.01247}
+    teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
       type: 3}
-    objectAsset: {fileID: -927199367670048503, guid: b83339f457412dc4a953c0e0437202a9,
+    teacherPostion: {x: 0.48, y: -0.42, z: 0.8313}
+    objectAsset: {fileID: -927199367670048503, guid: 789c987bf1e1449498e3387abd8ae24e,
       type: 3}
-    objectSize: 1
-    audioClip: {fileID: 8300000, guid: 63f4d8f20bfef01459d1d8044db821b0, type: 3}
+    objectPostion: {x: 2.6, y: -0.61, z: 1.01}
+    objectSize: 20
+    audioClip: {fileID: 0}
+  - backgroundCube: {fileID: 2800000, guid: e40e96e3ce35d584a9ce72667cfd7c79, type: 3}
+    groundCube: {fileID: 2800000, guid: c89da88e0f6d1734588b961c90f47054, type: 3}
+    latterAsset: {fileID: -927199367670048503, guid: 5bfbaf27b10ae694cade32ca5faa2434,
+      type: 3}
+    latterPostion: {x: 1.45, y: -0.8, z: 1.01247}
+    teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
+      type: 3}
+    teacherPostion: {x: 0.48, y: -0.42, z: 0.8313}
+    objectAsset: {fileID: 4298995881731601321, guid: c45e691f43f9ffb42b6cd1385e287f6e,
+      type: 3}
+    objectPostion: {x: 3.18, y: -0.92, z: 1.44}
+    objectSize: 1.2
+    audioClip: {fileID: 0}
+  - backgroundCube: {fileID: 2800000, guid: c5bc539bafca55d41987e79d09383844, type: 3}
+    groundCube: {fileID: 2800000, guid: e4ab0c30de1a5b84492f8ceb3f034fc2, type: 3}
+    latterAsset: {fileID: -927199367670048503, guid: c720c4558fc1fe945896fb1aa07be96c,
+      type: 3}
+    latterPostion: {x: 1.45, y: -0.86, z: 1.01247}
+    teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
+      type: 3}
+    teacherPostion: {x: 0.48, y: -0.42, z: 0.8313}
+    objectAsset: {fileID: -927199367670048503, guid: 35c40ea407842a54ca86a7ebe6e77016,
+      type: 3}
+    objectPostion: {x: 2.41, y: -1.35, z: 1.08}
+    objectSize: 10
+    audioClip: {fileID: 0}
+  - backgroundCube: {fileID: 2800000, guid: b11dca5920fff0d4aa7bc4bb16541ed0, type: 3}
+    groundCube: {fileID: 2800000, guid: 6216e712bf43d3049a8397e3b8d844ef, type: 3}
+    latterAsset: {fileID: -927199367670048503, guid: e8bcb4a6e70987349be1bdd0d128138e,
+      type: 3}
+    latterPostion: {x: 1.45, y: -0.758, z: 1.01247}
+    teacherAsset: {fileID: -927199367670048503, guid: ac2e9431a35dcf94ab1238a8559222ca,
+      type: 3}
+    teacherPostion: {x: 0.76, y: -0.42, z: 0.8313}
+    objectAsset: {fileID: -927199367670048503, guid: 715174148b5546c46ad5e8f0088bfbe8,
+      type: 3}
+    objectPostion: {x: 2.12, y: -0.93, z: 0.76}
+    objectSize: 15
+    audioClip: {fileID: 0}
   groundCube: {fileID: 1087535204}
   backgroundCube: {fileID: 1953408660}
   audioSource: {fileID: 820903304}
@@ -1040,6 +1154,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
