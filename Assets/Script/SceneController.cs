@@ -47,22 +47,21 @@ public class SceneController : MonoBehaviour
 
         //animation;
         teacherAnimator = teacher.GetComponent<Animator>();
-        if (teacherAnimator == null)
-        {
-            teacher.AddComponent<Animator>();
-            teacherAnimator = teacher.GetComponent<Animator>();
-        }
-        teacherAnimator.runtimeAnimatorController = Resources.Load("girl") as RuntimeAnimatorController;
-        if (index == 0)
+        
+        teacherAnimator.runtimeAnimatorController = Resources.Load(myModels[index].teacherAnimationName) as RuntimeAnimatorController;
+        try
         {
             objectAnimator = obj.GetComponent<Animator>();
-            if (objectAnimator == null)
-            {
-                obj.AddComponent<Animator>();
-                objectAnimator = obj.GetComponent<Animator>();
-            }
-            objectAnimator.runtimeAnimatorController = Resources.Load("Ojogor") as RuntimeAnimatorController;
+            objectAnimator.runtimeAnimatorController = Resources.Load(myModels[index].objectAnimationName) as RuntimeAnimatorController;
+
         }
+        catch (System.Exception)
+        {
+
+            throw;
+        }
+         
+      
         //check if any desired location provided if yes , then change location
         if (myModels[index].latterPostion!= Vector3.zero)
           latter.transform.localPosition = myModels[index].latterPostion;
