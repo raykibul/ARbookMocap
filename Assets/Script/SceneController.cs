@@ -76,8 +76,9 @@ public class SceneController : MonoBehaviour
         
         //rotating those models and latter and teacher;
         latter.transform.Rotate(new Vector3(0f,-180f,0f));
-        obj.transform.Rotate(new Vector3(0f, -180f, 0f));
-        teacher.transform.Rotate(new Vector3(0f, -180f, 0f));
+        obj.transform.Rotate(myModels[index].objectRotation);
+        teacher.transform.Rotate(myModels[index].teacherRotation);
+
        
         //change background texture;
         backgroundCube.GetComponent<Renderer>().material.mainTexture = myModels[index].backgroundCube;
